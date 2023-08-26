@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: green;">Access record data</h1>
+        <table border="2px">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Author</th>
+                <th>Email</th>
+            </tr>
+            {% for i in QSAO %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.author}}</td>
+                <td>{{i.email}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
